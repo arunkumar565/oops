@@ -9,10 +9,10 @@ class employee {
 void setter(string a,double s){
     name=a;
     salary=s;
-};
+}
 void getter(){
     cout<<"NAME : "<<name<<endl<<"salary :"<<salary<<endl;
-};
+}
 };
 int main(){
     int num;
