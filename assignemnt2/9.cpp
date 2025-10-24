@@ -14,7 +14,7 @@ public:
             this->balance = initialBalance;
         else {
             this->balance = 0;
-            cout << "Initial balance cannot be negative. Set to 0.\n";
+            cout << "Initial balance cannot be negative"<<endl;
         }
     }
 
@@ -24,7 +24,7 @@ public:
             balance += amount;
             cout << "Deposited: " << amount << endl;
         } else {
-            cout << "Invalid deposit amount!\n";
+            cout << "Invalid deposit amount"<< endl;
         }
     }
 
@@ -34,7 +34,7 @@ public:
             balance -= amount;
             cout << "Withdrawn: " << amount << endl;
         } else {
-            cout << "Invalid withdrawal amount or insufficient balance!\n";
+            cout << "Invalid withdrawal amount or insufficient balance"<< endl;
         }
     }
 
@@ -52,6 +52,7 @@ int main() {
     acc.deposit(2000);
     acc.withdraw(1000);
     acc.withdraw(7000); 
+     acc.withdraw(500);
     acc.display();
 
     return 0;
