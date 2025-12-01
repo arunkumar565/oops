@@ -11,9 +11,8 @@ vector<pair<int, int>> twoSumEasy(vector<int> nums, int target) {
     for (int i = 0; i < nums.size(); i++) {
 
         int current = nums[i];
-        int required = target - current;   // number needed
+        int required = target - current;   
 
-        // If required number exists in mp → pair found
         if (mp[required] > 0) {
             result.push_back({required, current});
             mp[required]--;    // reduce count to avoid duplicates

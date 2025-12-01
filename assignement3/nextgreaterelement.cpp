@@ -12,7 +12,6 @@ unordered_map<int, int> nextGreaterElement(vector<int> nums) {
  
     for (int i = 0; i < nums.size(); i++) {
 
-        // While stack has elements AND current element is greater
         while (!st.empty() && nums[i] > st.top()) {
             int topElement = st.top();      // take the top element
             st.pop();                       // remove from stack

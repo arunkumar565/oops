@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-    vector<string> words = {"eat", "tea", "tan", "ate", "nat", "bat"};
+   vector<string> words = {"listen", "silent", "enlist", "rat", "tar", "art"};
 
     
     unordered_map<string, vector<string>> groups;
